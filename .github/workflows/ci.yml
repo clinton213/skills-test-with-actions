@@ -35,5 +35,6 @@ jobs:
           echo Add other actions to build,
       - name: Run markdown lint
         run: |
+          npm fund
           npm install remark-cli remark-preset-lint-consistent
           npx remark . --use remark-preset-lint-consistent --frail
